@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Breakfast Calorie Estimator</title>
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/p3-styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/p3-js.js"></script>
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="header">
+			<h1>Breakfast Calorie Estimator</h1>
+		</div>
+
+		<div id="left">
+			<div id="foods">
+				<form>
+					<select id="items">
+						<option value="38">Apple (1/2 medium)</option>
+						<option value="53">Banana (1/2 medium)</option>
+						<option value="15">Blueberries (small handful)</option>
+						<option value="53">Grapes (1/2 cup)</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+		<!-- Right side to estimate calories and show picture -->
+		<div id="right">
+			<div id="canvas">
+				<h1>Estimated Calories</h1>
+				
+				<h1 id="totalCalories">0</h1>
+
+				<div id="plate">
+					<img src="img/myplate-white.jpg" alt="Plate" />
+				</div>
+
+			</div>
+		</div>
+		<div id="copyright">&copy Shawn Roe 2013</div>
+	</div><!--/#container-->
+
+</body>
+</html>

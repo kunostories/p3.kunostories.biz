@@ -1,0 +1,42 @@
+/*-------------------------------------------------------------------------------------------------
+p3-style.css
+for Project 3
+author: Shawn Roe
+DWA-15 Fall 2013
+-------------------------------------------------------------------------------------------------*/
+
+body {
+	font: 16px/26px Helvetica, Verdana, sans-serif;
+}
+
+h1 {
+	font: bold 2.5em/2em Helvetica, Verdana, sans-serif;
+	text-align: center;
+}
+
+h2 {
+	font: bold 1.5em/1.5em Georgia, serif;
+}
+
+.center {
+	text-align: center;
+}
+
+#container {
+	margin: 1em;
+	padding: 0.5em;
+	border: 1px solid #000;
+	overflow: auto;
+}
+
+#left {
+	width: 35%;
+	float: left;
+	background-color: #F69;
+}
+
+#right {
+	width: 65%;
+	float: right;
+	background-color: #96F;
+}
