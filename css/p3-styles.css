@@ -18,6 +18,15 @@ h2 {
 	font: bold 1.5em/1.5em Georgia, serif;
 }
 
+ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+ol > li {
+	font-weight: bold;
+}
+
 .center {
 	text-align: center;
 }

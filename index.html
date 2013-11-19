@@ -20,33 +20,43 @@
 			<h1>Breakfast Calorie Estimator</h1>
 		</div>
 
+		<!-- Left side to choose breakfast items -->
 		<div id="left">
 			<div id="foods">
-				<form>
-					<select id="items">
-						<option value="38">Apple (1/2 medium)</option>
-						<option value="53">Banana (1/2 medium)</option>
-						<option value="15">Blueberries (small handful)</option>
-						<option value="53">Grapes (1/2 cup)</option>
-					</select>
-				</form>
+				<h2>Breakfast foods</h2>
+				
+				<img src="img/fried-egg.png" title="Fried Egg" data-calories="92" class="food">
+				<img src="img/cereal.png" title="Cereal (1/2 cup)" data-calories="120" class="food">
+
+				<h2>Fruit</h2>
+				
+				<img src="img/apple.png" title="Apple (1/2 medium)" data-calories="38" class="food">
+				<img src="img/banana.png" title="Banana (1/2 medium)" data-calories="53" class="food">
+				<img src="img/grapes.png" title="Grapes (1/2 cup)" data-calories="53" class="food">
+				<img src="img/grapefruit-slice.png" title="Grapefruit (1/2 medium)" data-calories="52" class="food">
 			</div>
-		</div>
+
+		</div><!--/#left-->
 
 		<!-- Right side to estimate calories and show picture -->
 		<div id="right">
+
 			<div id="canvas">
 				<h1>Estimated Calories</h1>
 				
+				<!-- Calories will add up when selected-->
 				<h1 id="totalCalories">0</h1>
-
-				<div id="plate">
-					<img src="img/myplate-white.jpg" alt="Plate" />
-				</div>
+				
+				<ol id="plate" class="center">
+					<!-- Food item names will go here when selected-->
+				</ol>
 
 			</div>
-		</div>
+	
+		</div><!--/#right-->
+
 		<div id="copyright">&copy Shawn Roe 2013</div>
+	
 	</div><!--/#container-->
 
 </body>
