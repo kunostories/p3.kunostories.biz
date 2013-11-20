@@ -1,34 +1,34 @@
-/*---------------------------------------------------------------------
-Add up calories from each food item
-----------------------------------------------------------------------*/
-$(document).ready(function() {
-	$('#foods').change(function() {
-		var foodCalories = parseInt($('#items').val());
-		var totalCalories = parseInt($('#totalCalories').text());
-		$('#items').prop('selectedIndex',0);
-		$('#totalCalories').text(totalCalories + foodCalories);
-
-	});
-});
-
 /*----------------------------------------------------------------------
-Pictures are draggable
+Pictures are draggable, adds total calories, and makes breakfast list
 -----------------------------------------------------------------------*/
 $(document).ready(function() {
 	var contents = '';
 	var calories = '';
+	var servingsize = '';
+	var unit = '';
 	$('.food').draggable({
 		revert: true,
 		start: function() {
 			contents = $(this).attr('title');
 			calories = $(this).data('calories');
+			servingsize = parseFloat($(this).data('serving-size'));
+			unit = $(this).data('unit');
 		}
 	});
 
 	$('#canvas').droppable( {
 		accept: 'img',
 		drop: function() {
-			$('#plate').append('<li>' + contents + '</li>');
+			if($('#plate > li:contains(' + contents + ')').length > 0) {
+				var currentServingsize = parseFloat($('#plate > li:contains(' + contents + ')').data('serving-size'));
+				var newServingsize = parseFloat(currentServingsize + servingsize);
+				$('#plate > li:contains(' + contents + ')').replaceWith('<li data-serving-size="' + newServingsize + '">' + contents + ' (' + newServingsize + ' ' + unit + ')</li>');
+
+
+			}
+			else {
+				$('#plate').append('<li data-serving-size="' + servingsize + '">' + contents + ' (' + servingsize + ' ' + unit + ')</li>');
+			}
 
 			var totalCalories = parseInt($('#totalCalories').text());
 			var foodCalories = parseInt(calories);
