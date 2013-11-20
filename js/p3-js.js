@@ -6,8 +6,9 @@ $(document).ready(function() {
 	var calories = '';
 	var servingsize = '';
 	var unit = '';
-	$('.food').draggable({
+	$('img').draggable({
 		revert: true,
+		helper: "clone",
 		start: function() {
 			contents = $(this).attr('title');
 			calories = $(this).data('calories');
@@ -16,7 +17,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#canvas').droppable( {
+	$('#right').droppable( {
 		accept: 'img',
 		drop: function() {
 			if($('#plate > li:contains(' + contents + ')').length > 0) {
@@ -34,5 +35,15 @@ $(document).ready(function() {
 			var foodCalories = parseInt(calories);
 			$('#totalCalories').text(totalCalories + foodCalories);
 		}
+	});
+});
+
+/*----------------------------------------------------------------------
+Fruit section is accordion
+-----------------------------------------------------------------------*/
+$(document).ready(function() {
+	$("#food").accordion( {
+		collapsible: true,
+	    heightStyle: "content"
 	});
 });

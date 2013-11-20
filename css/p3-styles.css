@@ -5,7 +5,8 @@ author: Shawn Roe
 DWA-15 Fall 2013
 -------------------------------------------------------------------------------------------------*/
 
-body {
+html, body {
+	height: 100%;
 	font: 16px/26px Helvetica, Verdana, sans-serif;
 }
 
@@ -31,21 +32,54 @@ ol > li {
 	text-align: center;
 }
 
+#food .ui-accordion-content, #food .ui-widget-content {  
+    background-color: transparent;
+    background: transparent;
+}
+
+#food .ui-state-default {
+	background: #F69;
+	background-image: -moz-linear-gradient(top,  #F69 0%, #D69 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#F69), color-stop(100%,#D69)); /* Chrome,Safari4+ */  
+    background-image: -webkit-linear-gradient(top,  #F69 0%,#D69 100%); /* Chrome10+,Safari5.1+ */
+    color: #000;
+}
+
 #container {
 	margin: 1em;
 	padding: 0.5em;
 	border: 1px solid #000;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
 	overflow: auto;
+	padding-bottom: 50px;
 }
 
 #left {
 	width: 35%;
+	min-height: 525px;
 	float: left;
 	background-color: #F69;
+	overflow: auto;
 }
 
 #right {
 	width: 65%;
+	min-height: 525px;
 	float: right;
 	background-color: #96F;
+}
+
+#footer {
+	margin: 1em;
+	padding: 0.5em;
+	position: relative;
+	margin-top: -50px;
+	height: 50px;
+	clear: both;
 }

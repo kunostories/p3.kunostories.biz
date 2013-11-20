@@ -6,6 +6,14 @@
 	
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/p3-styles.css" rel="stylesheet" type="text/css">
+
+	<!--stickyfooter fix for IE
+	[if !IE 7]>
+	<style type="text/css">
+		#container {display:table;height:100%}
+	</style>
+	<![endif]-->
+
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -14,50 +22,63 @@
 </head>
 
 <body>
-
 	<div id="container">
-		<div id="header">
-			<h1>Breakfast Calorie Estimator</h1>
-		</div>
+		<div id="wrap">
+			<div id="main">
+				<div id="header">
+					<h1>Breakfast Calorie Estimator</h1>
+				</div>
 
-		<!-- Left side to choose breakfast items -->
-		<div id="left">
-			<div id="foods">
-				<h2>Breakfast foods</h2>
-				
-				<img src="img/fried-egg.png" title="Fried Egg" data-calories="92" data-serving-size="1" data-unit="egg" class="food">
-				<img src="img/cereal.png" title="Cereal" data-calories="120"  data-serving-size=".5" data-unit="cup" class="food">
+				<!-- Left side to choose breakfast items -->
+				<div id="left">
+					<div id="food">
+						<h3>Breakfast foods</h3>
+						<div>
+							<img src="img/fried-egg.png" title="Fried Egg" data-calories="92" data-serving-size="1" data-unit="egg">
+							<img src="img/egg-boiled.png" title="Egg Boiled" data-calories="38" data-serving-size="1" data-unit="egg">
+							<img src="img/coffee-red.png" title="Coffee" data-calories="1" data-serving-size="1" data-unit="cup">
+							<img src="img/cereal.png" title="Cereal" data-calories="120"  data-serving-size=".5" data-unit="cup">
+							<img src="img/toast-plain.png" title="Toast" data-calories="50"  data-serving-size="1" data-unit="thin slick">
+							<img src="img/toast-jam.png" title="Toast w/ Jam" data-calories="106"  data-serving-size="1" data-unit="thin slice w/ 1 tbsp of jam each">
+						</div>
 
-				<h2>Fruit</h2>
-				
-				<img src="img/apple.png" title="Apple" data-calories="38" data-serving-size=".5" data-unit="medium" class="food">
-				<img src="img/banana.png" title="Banana" data-calories="53"  data-serving-size=".5" data-unit="medium" class="food">
-				<img src="img/grapes.png" title="Grapes" data-calories="53"  data-serving-size=".5" data-unit="cup" class="food">
-				<img src="img/grapefruit-slice.png" title="Grapefruit" data-calories="52"  data-serving-size=".5" data-unit="medium" class="food">
-			</div>
 
-		</div><!--/#left-->
+						<h3>Fruit</h3>
+						<div>
+							<img src="img/apple.png" title="Apple" data-calories="38" data-serving-size=".5" data-unit="medium">
+							<img src="img/banana.png" title="Banana" data-calories="53"  data-serving-size=".5" data-unit="medium">
+							<img src="img/grapes.png" title="Grapes" data-calories="53"  data-serving-size=".5" data-unit="cup">
+							<img src="img/grapefruit-slice.png" title="Grapefruit" data-calories="52"  data-serving-size=".5" data-unit="medium">
+							<img src="img/orange.png" title="Orange" data-calories="31" data-serving-size=".5" data-unit="medium">
+							<img src="img/peach.png" title="Peach" data-calories="29"  data-serving-size=".5" data-unit="medium">
+							<img src="img/pear-lg.png" title="Pear" data-calories="48"  data-serving-size=".5" data-unit="medium">
+							<img src="img/strawberry.png" title="Strawberry" data-calories="23"  data-serving-size=".5" data-unit="cup">
+							<img src="img/tomato.png" title="Tomato" data-calories="11"  data-serving-size=".5" data-unit="medium">
+							<img src="img/watermelon.png" title="Watermelon" data-calories="23"  data-serving-size=".5" data-unit="cup">
+						</div>
 
-		<!-- Right side to estimate calories and show picture -->
-		<div id="right">
+					</div>
 
-			<div id="canvas">
-				<h1>Estimated Calories</h1>
-				
-				<!-- Calories will add up when selected-->
-				<h1 id="totalCalories">0</h1>
-				
-				<ol id="plate" class="center">
-					<!-- Food item names will go here when selected-->
-				</ol>
+				</div><!--/#left-->
 
-			</div>
-	
-		</div><!--/#right-->
+				<!-- Right side to estimate calories and show picture -->
+				<div id="right">
+					
+					<h1>Estimated Calories</h1>
+					
+					<!-- Calories will add up when selected-->
+					<h1 id="totalCalories">0</h1>
+					
+					<ol id="plate" class="center">
+						<!-- Food item names will go here when selected-->
+					</ol>
 
-		<div id="copyright">&copy Shawn Roe 2013</div>
-	
+				</div><!--/#right-->
+			
+			</div><!--/#main-->
+
+			<div id="footer">&copy Shawn Roe 2013</div>
+		</div><!--/#wrap-->
 	</div><!--/#container-->
-
 </body>
 </html>
