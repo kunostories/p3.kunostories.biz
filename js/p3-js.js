@@ -55,6 +55,8 @@ $(document).ready(function() {
 		collapsible: true,
 	    heightStyle: "content"
 	});
+
+	int();
 });
 
 
@@ -85,7 +87,3 @@ function init() {
     document.addEventListener("touchend", touchHandler, true);
     document.addEventListener("touchcancel", touchHandler, true);
 }
-
-$(document).ready(function() {
-	function int();
-});
