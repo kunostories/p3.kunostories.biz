@@ -21,12 +21,16 @@ html, body {
 }
 
 h1 {
-	font: bold 2.5em/2em Helvetica, Verdana, sans-serif;
+	font: bold 2em/1.8em Helvetica, Verdana, sans-serif;
 	text-align: center;
 }
 
 h2 {
-	font: bold 1.5em/1.5em Georgia, serif;
+	font: bold 1.3em/1.5em Georgia, serif;
+}
+
+strong {
+	font-weight: bold;
 }
 
 ol {
@@ -51,6 +55,10 @@ ol > li {
 #main {
 	overflow: auto;
 	padding-bottom: 50px;
+}
+
+#header p {
+	margin: .7em 3em;
 }
 
 #left {
