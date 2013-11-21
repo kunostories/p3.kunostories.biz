@@ -1,3 +1,12 @@
+/*------------------------------------------------
+ *	p3-js.js
+ *	for Project 3 DWA-15 Fall 2013
+ *
+ *	Breakfast Calorie Counter
+ *	by Shawn Roe
+ *	http://p3.kunostories.biz
+--------------------------------------------------*/
+
 /*----------------------------------------------------------------------
 Pictures are draggable, adds total calories, and makes breakfast list
 -----------------------------------------------------------------------*/

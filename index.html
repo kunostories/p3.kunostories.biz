@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="application-name" content="Breakfast Calorie Counter" />
+	<meta name="description" content="Javascript/ jQuery application that allows a user to drag images of common breakfast foods, like eggs, cereal, coffee, and a variety of fruits to an area that will sum the calorie information of the items and generate a list of the breakfast foods." />
+	<meta name="author" content="Shawn Roe" />
 
 	<title>Breakfast Calorie Estimator</title>
 	
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/p3-styles.css" rel="stylesheet" type="text/css">
 
-	<!--stickyfooter fix for IE
+	<!-- Stickyfooter fix for IE
 	[if !IE 7]>
 	<style type="text/css">
 		#container {display:table;height:100%}
@@ -29,22 +33,29 @@
 					<h1>Breakfast Calorie Estimator</h1>
 				</div>
 
-				<!-- Left side to choose breakfast items -->
+				<!-- Left side to choose breakfast items from images -->
 				<div id="left">
+
 					<div id="food">
+					
 						<h3>Breakfast foods</h3>
+						
 						<div>
+						
 							<img src="img/fried-egg.png" alt="Fried Egg" data-calories="92" data-serving-size="1" data-unit="egg">
 							<img src="img/egg-boiled.png" alt="Egg Boiled" data-calories="38" data-serving-size="1" data-unit="egg">
 							<img src="img/coffee-red.png" alt="Coffee" data-calories="1" data-serving-size="1" data-unit="cup">
 							<img src="img/cereal.png" alt="Cereal" data-calories="120"  data-serving-size=".5" data-unit="cup">
 							<img src="img/toast-plain.png" alt="Toast" data-calories="50"  data-serving-size="1" data-unit="thin slick">
 							<img src="img/toast-jam.png" alt="Toast w/ Jam" data-calories="106"  data-serving-size="1" data-unit="thin slice w/ 1 tbsp of jam each">
+						
 						</div>
 
-
+						<!-- Collection of common fruits -->
 						<h3>Fruit</h3>
+						
 						<div>
+						
 							<img src="img/apple.png" alt="Apple" data-calories="38" data-serving-size=".5" data-unit="medium">
 							<img src="img/banana.png" alt="Banana" data-calories="53"  data-serving-size=".5" data-unit="medium">
 							<img src="img/grapes.png" alt="Grapes" data-calories="53"  data-serving-size=".5" data-unit="cup">
@@ -55,29 +66,33 @@
 							<img src="img/strawberry.png" alt="Strawberry" data-calories="23"  data-serving-size=".5" data-unit="cup">
 							<img src="img/tomato.png" alt="Tomato" data-calories="11"  data-serving-size=".5" data-unit="medium">
 							<img src="img/watermelon.png" alt="Watermelon" data-calories="23"  data-serving-size=".5" data-unit="cup">
+						
 						</div>
 
-					</div>
+					</div><!--/#food-->
 
 				</div><!--/#left-->
 
-				<!-- Right side to estimate calories and show picture -->
+				<!-- Right side to estimate calories and generate list of breakfast items dragged into the 'right' div -->
 				<div id="right">
 
 					<h1>Estimated Calories</h1>
-					
-					<!-- Calories will add up when selected-->
+
+					<!-- Calories will add up here once images are dropped into the 'right' div -->
 					<h1 id="totalCalories">0</h1>
 					
 					<ol id="plate" class="center">
-						<!-- Food item names will go here when selected-->
+						<!-- Food item names will appear here once dropped -->
 					</ol>
 
 				</div><!--/#right-->
 			
 			</div><!--/#main-->
-
-			<div id="footer">&copy; Shawn Roe 2013</div>
+		
+			<div id="footer">
+				&copy; Shawn Roe 2013
+			</div>
+		
 		</div><!--/#wrap-->
 	</div><!--/#container-->
 </body>

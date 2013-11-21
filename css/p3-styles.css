@@ -1,9 +1,19 @@
-/*-------------------------------------------------------------------------------------------------
-p3-style.css
-for Project 3
-author: Shawn Roe
-DWA-15 Fall 2013
--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------
+ *	p3-style.css
+ *	for Project 3 DWA-15 Fall 2013
+ *
+ *	Breakfast Calorie Counter
+ *	by Shawn Roe
+ *	http://p3.kunostories.biz
+ *
+ *	Parts of the CSS are taken from:
+ *
+ *	Sticky Footer Solution
+ *	by Steve Hatcher 
+ *	http://stever.ca
+ *	http://www.cssstickyfooter.com
+--------------------------------------------------*/
+
 
 html, body {
 	height: 100%;
@@ -26,23 +36,6 @@ ol {
 
 ol > li {
 	font-weight: bold;
-}
-
-.center {
-	text-align: center;
-}
-
-#food .ui-accordion-content, #food .ui-widget-content {  
-    background-color: transparent;
-    background: transparent;
-}
-
-#food .ui-state-default {
-	background: #F69;
-	background-image: -moz-linear-gradient(top,  #F69 0%, #D69 100%); /* FF3.6+ */
-	background-image: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#F69), color-stop(100%,#D69)); /* Chrome,Safari4+ */  
-    background-image: -webkit-linear-gradient(top,  #F69 0%,#D69 100%); /* Chrome10+,Safari5.1+ */
-    color: #000;
 }
 
 #container {
@@ -82,4 +75,21 @@ ol > li {
 	margin-top: -50px;
 	height: 50px;
 	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+#food .ui-accordion-content, #food .ui-widget-content {  
+    background-color: transparent;
+    background: transparent;
+}
+
+#food .ui-state-default {
+	background: #F69;
+	background-image: -moz-linear-gradient(top,  #F69 0%, #D69 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#F69), color-stop(100%,#D69)); /* Chrome,Safari4+ */  
+    background-image: -webkit-linear-gradient(top,  #F69 0%,#D69 100%); /* Chrome10+,Safari5.1+ */
+    color: #000;
 }
