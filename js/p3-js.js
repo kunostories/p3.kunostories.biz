@@ -10,7 +10,7 @@ $(document).ready(function() {
 		revert: true,
 		helper: "clone",
 		start: function() {
-			contents = $(this).attr('title');
+			contents = $(this).attr('alt');
 			calories = $(this).data('calories');
 			servingsize = parseFloat($(this).data('serving-size'));
 			unit = $(this).data('unit');
