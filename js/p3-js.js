@@ -69,6 +69,7 @@ $(document).ready(function() {
 	Fruit section is accordion
 	-----------------------------------------------------------------------*/
 	$("#food").accordion( {
+		active: false,
 		collapsible: true,
 	    heightStyle: "content"
 	});
