@@ -85,6 +85,19 @@ ol > li {
 	text-align: center;
 }
 
+button {
+	background-color: #96F;
+	background-image: -moz-linear-gradient(top, #96F, #B793FF);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96F), to(#B793FF));
+  	background-image: -webkit-linear-gradient(top, #96F, #B793FF);
+  	background-image: -o-linear-gradient(top, #96F, #B793FF);
+  	background-image: linear-gradient(to bottom, #96F, #B793FF);
+  	background-repeat: repeat-x;
+  	-webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
 #food .ui-accordion-content, #food .ui-widget-content {  
     background-color: transparent;
     background: transparent;
